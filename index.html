@@ -36,22 +36,47 @@
   </header>
 
   <main id="home">
-    <section class="mx-auto max-w-6xl px-6 py-24 sm:py-32">
-      <p
-        class="mb-5 w-fit rounded-full bg-maximum-yellow px-3 py-1 text-sm font-semibold uppercase tracking-[0.2em] text-forest-green">
-        A little more reading, a lot more discovery
-      </p>
+    <section class="mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 px-6 py-20 sm:py-28 lg:grid-cols-2">
+      <div>
+        <p
+          class="mb-5 w-fit rounded-full bg-maximum-yellow px-3 py-1 text-sm font-semibold uppercase tracking-[0.2em] text-forest-green">
+          A little more reading, a lot more discovery
+        </p>
 
-      <h1 class="max-w-3xl text-5xl font-bold leading-tight tracking-tight sm:text-6xl">
-        Find your next
-        <span class="text-forest-green">favourite book.</span>
-      </h1>
+        <h1 class="max-w-3xl text-5xl font-bold leading-tight tracking-tight sm:text-6xl">
+          Find your next
+          <span class="text-forest-green">favourite book.</span>
+        </h1>
 
-      <p class="mt-6 max-w-2xl text-lg leading-8 text-stone-600">
-        Explore stories, discover new authors, and keep the books you love
-        close. Your next great read is waiting to be found.
-      </p>
+        <p class="mt-6 max-w-2xl text-lg leading-8 text-stone-600">
+          Explore stories, discover new authors, and keep the books you love
+          close. Your next great read is waiting to be found.
+        </p>
 
+        <a href="#books"
+          class="mt-8 inline-flex rounded-lg bg-forest-green px-6 py-3 font-semibold text-maximum-yellow shadow-md transition hover:-translate-y-0.5 hover:shadow-lg">
+          Browse books
+        </a>
+      </div>
+
+      <div aria-hidden="true"
+        class="mx-auto grid h-80 w-full max-w-md grid-cols-3 items-center justify-items-center rounded-3xl bg-forest-green p-6">
+        <div class="-rotate-6 rounded-lg bg-amber-50 p-3 shadow-xl">
+          <img src="https://covers.openlibrary.org/b/isbn/9780735211292-L.jpg" alt="The book cover of the book Atomic Habits"
+            class="h-56 w-28 -rotate-6 rounded-lg object-cover shadow-xl sm:w-32" />
+        </div>
+
+        <div class="z-10 rounded-lg bg-amber-50 p-3 shadow-xl">
+          <img src="https://covers.openlibrary.org/b/isbn/9781949759228-L.jpg" alt="The book cover of the book The Mountain Is You."
+            class="z-10 h-64 w-28 rounded-lg object-cover shadow-xl sm:w-32" />
+        </div>
+
+        <div class="rotate-6 rounded-lg bg-amber-50 p-3 shadow-xl">
+
+          <img src="https://covers.openlibrary.org/b/isbn/9781455586691-L.jpg" alt="The book cover of the book Deep Work"
+            class="h-56 w-28 rotate-6 rounded-lg object-cover shadow-xl sm:w-32" />
+        </div>
+      </div>
     </section>
 
     <section id="books" class="bg-white">
