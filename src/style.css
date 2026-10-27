@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+@theme {
+  --color-forest-green: #006633;
+  --color-maximum-yellow: #FAF92A;
+}
