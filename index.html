@@ -52,10 +52,6 @@
         close. Your next great read is waiting to be found.
       </p>
 
-      <a href="#about"
-        class="mt-9 inline-flex rounded-lg bg-forest-green px-6 py-3 text-sm font-semibold text-maximum-yellow shadow-sm transition hover:brightness-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-forest-green focus-visible:ring-offset-2">
-        About the project
-      </a>
     </section>
 
     <section id="books" class="bg-white">
@@ -67,67 +63,33 @@
           Books to discover
         </h2>
         <p class="mt-3 max-w-2xl leading-7 text-stone-600">
-          Browse a few sample books. We’ll connect real book data later.
+          Browse books from Open Library and find your next great read.
         </p>
+        <form id="book-search-form" class="mt-8 flex max-w-xl flex-col gap-3 sm:flex-row">
+          <label for="book-search" class="sr-only">Search books by title</label>
+          <input id="book-search" type="search" placeholder="Search books by title..." required
+            class="min-w-0 flex-1 rounded-lg border border-forest-green/30 bg-white px-4 py-3 text-stone-900" />
+          <button type="submit" class="rounded-lg bg-forest-green px-6 py-3 font-semibold text-maximum-yellow">
+            Search books
+          </button>
+        </form>
 
-        <div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <article class="rounded-xl border border-forest-green/15 bg-amber-50 p-4">
-            <div aria-hidden="true" class="flex h-52 items-end rounded-lg bg-forest-green p-4">
-              <span class="rounded-full bg-maximum-yellow px-3 py-1 text-sm font-semibold text-forest-green">
-                Cover placeholder
-              </span>
-            </div>
-            <h3 class="mt-4 text-lg font-bold text-forest-green">Book Title One</h3>
-            <p class="mt-1 text-sm text-stone-600">Author Name</p>
-            <button type="button"
-              class="mt-4 rounded-lg bg-forest-green px-4 py-2 text-sm font-semibold text-maximum-yellow"
-              data-add-favourite data-id="book-1" data-title="Book Title One" data-author="Author Name">
-              Add to favourites
-            </button>
-          </article>
+        <p id="search-status" class="mt-4 min-h-6 text-sm text-stone-600" role="status" aria-live="polite"></p>
+        <div id="books-grid" class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
 
-          <article class="rounded-xl border border-forest-green/15 bg-amber-50 p-4">
-            <div aria-hidden="true" class="flex h-52 items-end rounded-lg bg-maximum-yellow p-4">
-              <span class="rounded-full bg-white px-3 py-1 text-sm font-semibold text-forest-green">
-                Cover placeholder
-              </span>
-            </div>
-            <h3 class="mt-4 text-lg font-bold text-forest-green">Book Title Two</h3>
-            <p class="mt-1 text-sm text-stone-600">Author Name</p>
-            <button type="button"
-              class="mt-4 rounded-lg bg-forest-green px-4 py-2 text-sm font-semibold text-maximum-yellow"
-              data-add-favourite data-id="book-2" data-title="Book Title Two" data-author="Author Name">
-              Add to favourites
-            </button>
-          </article>
-
-          <article class="rounded-xl border border-forest-green/15 bg-amber-50 p-4">
-            <div aria-hidden="true" class="flex h-52 items-end rounded-lg bg-forest-green p-4">
-              <span class="rounded-full bg-maximum-yellow px-3 py-1 text-sm font-semibold text-forest-green">
-                Cover placeholder
-              </span>
-            </div>
-            <h3 class="mt-4 text-lg font-bold text-forest-green">Book Title Three</h3>
-            <p class="mt-1 text-sm text-stone-600">Author Name</p>
-            <button type="button"
-              class="mt-4 rounded-lg bg-forest-green px-4 py-2 text-sm font-semibold text-maximum-yellow"
-              data-add-favourite data-id="book-3" data-title="Book Title Three" data-author="Author Name">
-              Add to favourites
-            </button>
-          </article>
         </div>
-      </div>
     </section>
 
     <section id="about" class="border-y border-maximum-yellow bg-white">
       <div class="mx-auto max-w-6xl px-6 py-12">
         <h2 class="text-2xl font-bold tracking-tight text-forest-green">
-          About Book Explorer
+          A little wonder between the covers
         </h2>
         <p class="mt-3 max-w-2xl leading-7 text-stone-600">
-          Book Explorer is a place to browse books, discover authors, and save
-          the books you want to read. We are building it one feature at a
-          time.
+          Every great reading journey begins with a little curiosity. Book Explorer
+          helps you wander through new titles, discover authors, and save the stories
+          that speak to you.(Your faves) Whether you’re looking for fresh inspiration or a quiet
+          escape, your next favourite book might be just one little search away.
         </p>
       </div>
     </section>
