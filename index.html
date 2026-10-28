@@ -10,25 +10,27 @@
 
 <body class="min-h-screen bg-amber-50 text-stone-900 antialiased">
   <header class="border-b border-maximum-yellow bg-white">
-    <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-5" aria-label="Main navigation">
-      <a href="#home" class="text-xl font-bold tracking-tight text-forest-green">
+    <nav
+      class="mx-auto flex max-w-6xl flex-col items-start gap-4 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-6 sm:py-5"
+      aria-label="Main navigation">
+      <a href="#home" class="whitespace-nowrap text-xl font-bold tracking-tight text-forest-green">
         Book Explorer
       </a>
 
-      <div class="flex items-center gap-6 text-sm font-medium">
-        <a href="#home" class="text-forest-green" aria-current="page">
+      <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm font-medium">
+        <a href="#home" class="whitespace-nowrap text-forest-green" aria-current="page">
           Home
         </a>
 
-        <a href="#books" class="text-stone-600 transition hover:text-forest-green">
+        <a href="#books" class="whitespace-nowrap text-stone-600 transition hover:text-forest-green">
           Explore Books
         </a>
 
-        <a href="#about" class="text-stone-600 transition hover:text-forest-green">
+        <a href="#about" class="whitespace-nowrap text-stone-600 transition hover:text-forest-green">
           About
         </a>
 
-        <a href="./favourites.html" class="text-stone-600 transition hover:text-forest-green">
+        <a href="./favourites.html" class="whitespace-nowrap text-stone-600 transition hover:text-forest-green">
           Favourites
         </a>
       </div>
@@ -62,18 +64,21 @@
       <div aria-hidden="true"
         class="mx-auto grid h-80 w-full max-w-md grid-cols-3 items-center justify-items-center rounded-3xl bg-forest-green p-6">
         <div class="-rotate-6 rounded-lg bg-amber-50 p-3 shadow-xl">
-          <img src="https://covers.openlibrary.org/b/isbn/9780735211292-L.jpg" alt="The book cover of the book Atomic Habits"
+          <img src="https://covers.openlibrary.org/b/isbn/9780735211292-L.jpg"
+            alt="The book cover of the book Atomic Habits"
             class="h-56 w-28 -rotate-6 rounded-lg object-cover shadow-xl sm:w-32" />
         </div>
 
         <div class="z-10 rounded-lg bg-amber-50 p-3 shadow-xl">
-          <img src="https://covers.openlibrary.org/b/isbn/9781949759228-L.jpg" alt="The book cover of the book The Mountain Is You."
+          <img src="https://covers.openlibrary.org/b/isbn/9781949759228-L.jpg"
+            alt="The book cover of the book The Mountain Is You."
             class="z-10 h-64 w-28 rounded-lg object-cover shadow-xl sm:w-32" />
         </div>
 
         <div class="rotate-6 rounded-lg bg-amber-50 p-3 shadow-xl">
 
-          <img src="https://covers.openlibrary.org/b/isbn/9781455586691-L.jpg" alt="The book cover of the book Deep Work"
+          <img src="https://covers.openlibrary.org/b/isbn/9781455586691-L.jpg"
+            alt="The book cover of the book Deep Work"
             class="h-56 w-28 rotate-6 rounded-lg object-cover shadow-xl sm:w-32" />
         </div>
       </div>
