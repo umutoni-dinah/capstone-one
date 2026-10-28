@@ -4,7 +4,7 @@ export async function fetchBooks(query = 'Biography') {
   const params = new URLSearchParams({
     q: query,
     fields: 'key,title,author_name,cover_i',
-    limit: '12',
+    limit: '15',
   });
 
   const response = await fetch(`${API_URL}?${params}`);
