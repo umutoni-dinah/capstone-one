@@ -58,7 +58,7 @@ function createBookCard(book, isFavourite = false) {
   detailsLink.href = `https://openlibrary.org${book.id}`;
   detailsLink.target = "_blank";
   detailsLink.rel = "noopener noreferrer";
-  detailsLink.textContent = "View on Open Library ↗";
+  detailsLink.textContent = "View on Open Library";
   detailsLink.className =
     "mt-3 block text-sm font-semibold text-forest-green underline";
 
